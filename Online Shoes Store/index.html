@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Shoes Store — Demo</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">mojo</div>
+
+            <nav class="main-nav">
+                <a href="#">Articles</a>
+                <a href="#">Shop</a>
+                <a href="#">Magazine</a>
+                <a href="#">Help</a>
+            </nav>
+
+            <div class="header-right">
+                <a class="user" href="#">John Doe</a>
+                <a class="cart" href="#">Cart <i class="fa-solid fa-basket-shopping"></i></a>
+                <a href="#">MAN</a>
+                <a href="#">WOMAN</a>
+            </div>
+        </div>
+
+        <div class="subnav">
+            <div class="container subnav-inner">
+                <ul class="subnav-links">
+                    <li>POPULAR</li>
+                    <li>MOST VIEWED</li>
+                    <li>NEWEST</li>
+                    <li>RANDOM</li>
+                </ul>
+                <div class="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-inner">
+            <div class="hero-left">
+                <img src="hero.png/hero.bg.png" alt="Shoe" class="hero-shoe">
+            </div>
+
+            <div class="hero-right">
+                <h1>Hiroshi Fujiwara's <span class="x">x</span> <strong>Nike</strong></h1>
+                <p class="hero-sub">Following initial images released last week, we bring you Hiroshi Fujiwara's
+                    collaboration with Nike.</p>
+                <a class="btn-outline" href="#">WATCH THE VIDEO</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container">
+            <h2 class="section-title">Other Great Shoes</h2>
+            <p class="section-desc">Each shoe is based off of a similar aesthetic as well as being tailored to your
+                general taste.</p>
+
+            <div class="product-row">
+                <button class="arrow left"><i class="fa fa-chevron-left"></i></button>
+
+                <div class="product-cards">
+                    <div class="product-card">
+                        <img src="shoes img\img.1.png" alt="img.1" />
+                        <h3>Nike green</h3>
+                        <p class="stock">24 Left in Stock</p>
+                        <p class="price">$100</p>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="shoes img\img.2.png" alt="img.2" />
+                        <h3>Nike yellow</h3>
+                        <p class="stock">10 Left in Stock</p>
+                        <p class="price">$65</p>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="shoes img\img.3.png" alt="img.3" />
+                        <h3>Nike red</h3>
+                        <p class="stock">48 Left in Stock</p>
+                        <p class="price">$185</p>
+                    </div>
+                </div>
+
+                <button class="arrow right"><i class="fa fa-chevron-right"></i></button>
+            </div>
+
+            <p class="prefs">Want to change your preferences?</p>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="copyright">COPYRIGHT • ALL RIGHTS RESERVED 2025</div>
+            <div class="socials">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="help"><a href="#">HELP / CUSTOMER SERVICE</a></div>
+        </div>
+    </footer>
+
+</body>
+</html>
