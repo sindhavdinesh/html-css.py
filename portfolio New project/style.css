@@ -1,0 +1,1070 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#020617;
+  font-family:'Poppins',sans-serif;
+  color:#fff;
+}
+
+/* HEADER */
+header{
+  position:sticky;
+  top:0;
+  background:rgba(0,0,0,.6);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(255,255,255,.15);
+  z-index:100;
+}
+
+.logo{
+  font-size:28px;
+  font-weight:800;
+  color:#22c55e;
+}
+
+.nav-links a{
+  margin-left:25px;
+  text-decoration:none;
+  color:#bfc6d4;
+}
+
+.nav-links a:hover{
+  color:#22c55e;
+}
+
+/* BUTTON */
+.btn-talk{
+  background:#22c55e;
+  padding:8px 20px;
+  border-radius:35px;
+  border:none;
+  font-weight:600;
+  box-shadow:0 0 25px rgba(34,197,94,.7);
+  cursor:pointer;
+}
+
+/* SECTIONS */
+section{
+  padding:90px 0;
+  border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.section-title{
+  font-size:42px;
+  font-weight:800;
+}
+
+.section-desc{
+  color:#94a3b8;
+  max-width:650px;
+  margin:15px 0 45px;
+}
+
+/* HERO */
+.hero-left h1{
+  font-size:55px;
+  font-weight:800;
+}
+
+.hero-left span{
+  background:linear-gradient(to right,#22c55e,#38bdf8,#a855f7);
+  -webkit-background-clip:text;
+  color:transparent;
+}
+
+/* ================= HERO TEXT ================= */
+
+.hero-left p{
+  color:#95a1ac;
+  max-width:500px;
+}
+
+/* ================= ROTATING TEXT FIX ================= */
+
+.hero-text h2{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:42px;
+  font-weight:700;
+  color:#ffffff;
+}
+
+/* Outer wrapper (mask) */
+.hero-text .rotate-text{
+  position:relative;
+  height:1.3em;
+  overflow:hidden;
+  display:inline-block;
+}
+
+/* Inner rotating lines */
+.hero-text .rotate-text span{
+  display:block;
+  color:#22c55e;
+  animation:rotateText 12s infinite;
+}
+
+/* Proper animation */
+@keyframes rotateText{
+  0%   { transform:translateY(0%); }
+  16%  { transform:translateY(-100%); }
+  32%  { transform:translateY(-200%); }
+  48%  { transform:translateY(-300%); }
+  64%  { transform:translateY(-400%); }
+  80%  { transform:translateY(-500%); }
+  100% { transform:translateY(0%); }
+  120% { transform:translateY(0%); }
+}
+
+
+/* SKILLS */
+.skill{
+  display:inline-block;
+  margin:8px;
+  padding:10px 18px;
+  border-radius:40px;
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.18);
+}
+
+/* PROJECTS */
+.project-card{
+  background:rgba(255,255,255,.08);
+  border-radius:16px;
+  padding:18px;
+  border:1px solid rgba(255,255,255,.2);
+}
+
+.project-card img{
+  width:100%;
+  height:220px;
+  border-radius:14px;
+  object-fit:cover;
+}
+
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:25px;
+  color:#a1a1a1;
+  
+}
+
+/* MEDIA QUERY */
+@media(max-width:768px){
+  .hero-left h1,
+  .type{
+    font-size:34px;
+  }
+}
+
+/* ================= CONTACT MESSAGE BOX ================= */
+
+.contact-box{
+  max-width:1200px;
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.2);
+  border-radius:18px;
+  padding:25px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.contact-box input,
+.contact-box textarea{
+  background:#1c2431;
+  border:none;
+  padding:12px;
+  border-radius:8px;
+  color:white;
+  outline:none;
+  font-size:14px;
+}
+
+.contact-box textarea{
+  resize:none;
+  height:120px;
+}
+
+.footer-social{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  margin-top:25px;
+}
+
+.social{
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition:.3s;
+}
+
+.social i{
+  color:#fff;        
+  font-size:20px;
+}
+
+.social:hover{
+  transform:translateY(-4px);
+}
+
+.whatsapp{background:#25D366}
+.github{background:#24292e}
+.linkedin{background:#0077b5}
+.insta{
+  background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af,#515bd4);
+}
+
+.social i{
+  font-family: "Font Awesome 6 Brands" !important;
+  font-weight: 400;
+  color: #fff;
+  font-size: 20px;
+  display: inline-block;
+}
+
+/* ================= PROFILE CARD (SQUARE IMAGE) ================= */
+
+.profile-card{
+  width:800px;
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.2);
+  border-radius:20px;
+  padding:20px;
+  text-align:center;
+  box-shadow:0 15px 40px rgba(0,0,0,.6);
+}
+
+/* 👇 SQUARE IMAGE */
+.profile-card img{
+  width:300px;
+  height:422px;
+  border-radius:12px;   
+  border:2px solid #22c55e;
+  object-fit:cover;
+  display:block;
+  margin:0 auto 12px auto;
+}
+
+/* ================= HOME UI POPUP ================= */
+
+.home-ui{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.75);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  opacity:0;
+  pointer-events:none;
+  transition:.3s ease;
+  z-index:9999;
+}
+
+#home-ui:target{
+  opacity:1;
+  pointer-events:auto;
+}
+
+.home-card{
+  width:90%;
+  max-width:420px;
+  background:#020617;
+  padding:30px;
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,.15);
+  box-shadow:0 20px 50px rgba(0,0,0,.8);
+  text-align:center;
+}
+
+/* close button */
+.close-btn{
+  position:absolute;
+  top:12px;
+  right:16px;
+  font-size:26px;
+  color:#fff;
+  text-decoration:none;
+}
+
+
+
+/* ===== CONTACT SECTION SPACE FIX ===== */
+
+#contact,
+#message{
+  padding-top:40px;   
+}
+
+/* ================= SKILLS SECTION (DARK MODE) ================= */
+
+#skills{
+  background:#020617; 
+}
+
+.skills-box{
+  background:#020617;
+  border-radius:20px;
+  padding:50px 40px;
+  border:1px solid rgba(255,255,255,0.12);
+  box-shadow:0 20px 40px rgba(0,0,0,.6);
+}
+
+.skills-title{
+  text-align:center;
+  font-size:28px;
+  font-weight:800;
+  margin-bottom:40px;
+  color:#ffffff;
+}
+
+.skills-title span{
+  color:#22c55e;
+}
+
+/* EACH SKILL */
+.skill-item{
+  margin-bottom:30px;
+}
+
+.skill-head{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:8px;
+}
+
+.skill-name{
+  font-weight:600;
+  color:#e5e7eb;
+}
+
+/* skill text colors */
+.laravel{color:#ff6b6b}
+.vue{color:#2ecc71}
+.tailwind{color:#38bdf8}
+.php{color:#a5b4fc}
+.html{color:#fb923c}
+.js{color:#facc15}
+
+.skill-percent{
+  font-weight:600;
+  color:#9ca3af;
+}
+
+/* PROGRESS BAR */
+.skill-bar{
+  width:100%;
+  height:6px;
+  background:#111827;
+  border-radius:10px;
+  overflow:hidden;
+}
+
+.skill-fill{
+  height:100%;
+  background:linear-gradient(90deg,#22c55e,#38bdf8);
+  border-radius:10px;
+}
+
+/* widths */
+.w-70{width:70%}
+.w-80{width:80%}
+.w-90{width:90%}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .skills-box{
+    padding:30px 20px;
+  }
+}
+
+
+/* ================= LET'S TALK BUTTON ================= */
+
+.btn-talk{
+  display:inline-block;
+  background:#22c55e;
+  padding:10px 22px;
+  border-radius:35px;
+  font-weight:600;
+  color:#041b0c;
+  text-decoration:none;   
+  box-shadow:0 0 25px rgba(34,197,94,.7);
+  transition:.3s;
+  cursor:pointer;
+}
+
+.btn-talk:hover{
+  transform:translateY(-3px);
+  box-shadow:0 0 40px rgba(34,197,94,1);
+}
+
+/* ================= CONTACT UI POPUP ================= */
+
+.contact-ui{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.75);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  opacity:0;
+  pointer-events:none;
+  transition:.4s;
+  z-index:9999;
+}
+
+/*  PURE CSS TRIGGER */
+#contact-ui:target{
+  opacity:1;
+  pointer-events:auto;
+}
+
+.contact-card{
+  width:90%;
+  max-width:420px;
+  background:#020617;
+  padding:30px;
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,.15);
+  box-shadow:0 20px 50px rgba(0,0,0,.8);
+  position:relative;
+  animation:popup .4s ease;
+}
+
+@keyframes popup{
+  from{transform:scale(.85);opacity:0}
+  to{transform:scale(1);opacity:1}
+}
+
+.close-btn{
+  position:absolute;
+  top:10px;
+  right:15px;
+  font-size:26px;
+  color:#fff;
+  text-decoration:none;
+}
+
+/* ================= PROFILE CARD HOVER UI ================= */
+
+/* smooth transition */
+.profile-card{
+  position:relative;
+  overflow:hidden;
+  transition:0.4s ease;
+}
+
+/* image hover zoom */
+.profile-card img{
+  transition:0.5s ease;
+}
+
+/* hover effects */
+.profile-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 0 50px rgba(34,197,94,0.8);
+}
+
+.profile-card:hover img{
+  transform:scale(1.08);
+}
+
+/* overlay UI */
+.profile-card::after{
+  content:"Mr developer";
+  position:absolute;
+  inset:0;
+  background:rgba(2,6,23,0.75);
+  color:#22c55e;
+  font-size:22px;
+  font-weight:700;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  opacity:0;
+  transition:0.4s ease;
+}
+
+.profile-card:hover::after{
+  opacity:1;
+}
+
+/* ================= SKILLS HOVER EFFECT ================= */
+
+.skill-item{
+  transition:0.4s ease;
+  padding:10px;
+  border-radius:12px;
+}
+
+.skill-item:hover{
+  transform:translateY(-6px);
+  background:rgba(255,255,255,0.04);
+  box-shadow:0 0 35px rgba(34,197,94,0.6);
+}
+
+/* ================= PROJECT HOVER (ALL-IN-ONE) ================= */
+
+.project-card{
+  position:relative;
+  overflow:hidden;
+  transition:0.4s ease;
+}
+
+.project-card img{
+  transition:0.5s ease;
+}
+
+/* hover effect */
+.project-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 0 45px rgba(34,197,94,0.7);
+}
+
+.project-card:hover img{
+  transform:scale(1.1);
+}
+
+/* overlay text */
+.project-card::after{
+  content:"View Project";
+  position:absolute;
+  inset:0;
+  background:rgba(2,6,23,0.75);
+  color:#22c55e;
+  font-size:20px;
+  font-weight:700;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  opacity:0;
+  transition:0.4s ease;
+}
+
+.project-card:hover::after{
+  opacity:1;
+}
+
+/* REMOVE BLUE LINK FROM PROJECTS */
+.project-link{
+  text-decoration:none;   
+  color:inherit;          
+  display:block;          
+}
+
+.project-link:visited,
+.project-link:hover,
+.project-link:active{
+  color:inherit;
+  text-decoration:none;
+}
+
+/* ================= RESPONSIVE MEDIA QUERIES ================= */
+
+/* ===== XS : Mobile (Below 576px) ===== */
+@media (max-width:575px){
+
+  .container{
+    max-width:100%;
+  }
+
+  .profile-card{
+    width:100%;
+    padding:15px;
+  }
+
+  .profile-card img{
+    width:100%;
+    height:auto;
+  }
+
+  h1, h2{
+    font-size:26px;
+    text-align:center;
+  }
+}
+
+
+/* ===== SM : Mobile (576px – 767px) ===== */
+@media (min-width:576px) and (max-width:767px){
+
+  .container{
+    max-width:540px;
+  }
+
+  .profile-card{
+    width:100%;
+  }
+
+  .profile-card img{
+    width:220px;
+    height:380px;
+  }
+}
+
+
+/* ===== MD : Tablet / Mobile Horizontal (768px – 991px) ===== */
+@media (min-width:768px) and (max-width:991px){
+
+  .container{
+    max-width:720px;
+  }
+
+  .profile-card{
+    width:90%;
+  }
+
+  .profile-card img{
+    width:250px;
+    height:420px;
+  }
+}
+
+
+/* ===== LG : iPad / Mini Laptop (992px – 1199px) ===== */
+@media (min-width:992px) and (max-width:1199px){
+
+  .container{
+    max-width:960px;
+  }
+
+  .profile-card{
+    width:700px;
+  }
+
+  .profile-card img{
+    width:280px;
+    height:480px;
+  }
+}
+
+
+/* ===== XL : Laptop / Mini Desktop (1200px – 1399px) ===== */
+@media (min-width:1200px) and (max-width:1399px){
+
+  .container{
+    max-width:1140px;
+  }
+
+  .profile-card{
+    width:760px;
+  }
+
+  .profile-card img{
+    width:290px;
+    height:500px;
+  }
+}
+
+
+/* ===== XXL : Desktop / TV (1400px Above) ===== */
+@media (min-width:1400px){
+
+  .container{
+    max-width:1320px;
+  }
+
+  .profile-card{
+    width:800px;
+  }
+
+  .profile-card img{
+    width:300px;
+    height:522px;
+  }
+}
+
+/* ===== RESET ===== */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== IMPORTANT FIX ===== */
+html{
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;   
+  overflow-x: hidden;
+}
+
+body{
+  min-height: 100vh;    
+  overflow-x: hidden;  
+}
+
+/* ===== SCROLLBAR HIDE ===== */
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+}
+
+/* Firefox */
+body{
+  scrollbar-width: none;
+}
+
+/* ===== IMAGE SAFE ===== */
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== HEADER GAP FIX ===== */
+header{
+  position: fixed;     /* top pe chipka */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  margin: 0;
+  padding: 0;
+  z-index: 9999;
+}
+
+/* Navbar extra space remove */
+.navbar{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* ===============================
+   GLOBAL RESET
+================================ */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===============================
+   HTML & BODY SCROLL CONTROL
+   (YAHI MAIN FIX HAI)
+================================ */
+html{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;          /* html lock */
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;          /* sirf body scroll */
+  overflow-x: hidden;
+  padding-top: 70px;         /* header offset */
+  overscroll-behavior: none; /* bounce band */
+  scrollbar-width: none;     /* Firefox scrollbar hide */
+}
+
+/* Chrome / Edge / Safari scrollbar hide */
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+}
+
+/* ===============================
+   FIXED HEADER
+================================ */
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  margin: 0;
+  padding: 0;
+  z-index: 9999;
+  background: rgba(0,0,0,0.75);
+  backdrop-filter: blur(10px);
+}
+
+.navbar{
+  height: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex;
+  align-items: center;
+}
+
+/* ===============================
+   LOGO & NAV LINKS
+================================ */
+.logo{
+  font-size: 22px;
+  line-height: 1;
+}
+
+.nav-links a{
+  padding: 8px 14px;
+  line-height: 1;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+/* ===============================
+   BUTTON
+================================ */
+.btn-talk{
+  padding: 8px 18px;
+  font-size: 14px;
+  border-radius: 30px;
+  border: none;
+}
+
+/* ===============================
+   SECTIONS (NO DOUBLE HEIGHT)
+================================ */
+section{
+  width: 100%;
+  margin: 0;
+  padding: 60px 0;
+}
+
+/* Hero / first section safe height */
+.hero,
+.home,
+.main{
+  min-height: calc(100vh - 70px);
+}
+
+/* ===============================
+   IMAGE / MEDIA SAFETY
+================================ */
+img,
+video{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===============================
+   IMPORTANT BUG KILLERS
+================================ */
+
+/* ❌ width:100vw bug fix */
+.container,
+.container-fluid{
+  max-width: 100%;
+}
+
+/* ❌ last-pixel jump fix */
+body::after{
+  content: "";
+  display: block;
+  height: 0;
+  margin-bottom: -1px;
+}
+
+/* ===============================
+   MOBILE HEADER ADJUST
+================================ */
+@media (max-width: 768px){
+  header{
+    height: 60px;
+  }
+
+  body{
+    padding-top: 60px;
+  }
+
+  .logo{
+    font-size: 18px;
+  }
+
+  .nav-links a{
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+}
+
+/* ===============================
+   RESPONSIVE BASE (ALL DEVICES)
+================================ */
+html, body{
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Containers overflow fix */
+.container,
+.container-fluid,
+.row{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* ===============================
+   LARGE DESKTOP (1200px+)
+================================ */
+@media (min-width: 1200px){
+  section{
+    padding: 80px 0;
+  }
+
+  .logo{
+    font-size: 24px;
+  }
+
+  .nav-links a{
+    font-size: 16px;
+  }
+}
+
+/* ===============================
+   LAPTOP (992px – 1199px)
+================================ */
+@media (max-width: 1199px){
+  section{
+    padding: 70px 0;
+  }
+
+  .logo{
+    font-size: 22px;
+  }
+}
+
+/* ===============================
+   TABLET (768px – 991px)
+================================ */
+@media (max-width: 991px){
+
+  header{
+    height: 60px;
+  }
+
+  body{
+    padding-top: 60px;
+  }
+
+  .logo{
+    font-size: 20px;
+  }
+
+  .nav-links{
+    gap: 10px;
+  }
+
+  section{
+    padding: 60px 20px;
+  }
+}
+
+/* ===============================
+   MOBILE (≤767px)
+================================ */
+@media (max-width: 767px){
+
+  header{
+    height: 56px;
+  }
+
+  body{
+    padding-top: 56px;
+  }
+
+  .logo{
+    font-size: 18px;
+  }
+
+  .nav-links{
+    flex-direction: column;
+    background: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 56px;
+    left: 0;
+    width: 100%;
+    display: none;
+  }
+
+  .nav-links a{
+    padding: 12px 0;
+    font-size: 15px;
+  }
+
+  section{
+    padding: 50px 16px;
+  }
+}
+
+/* ===============================
+   SMALL MOBILE (≤480px)
+================================ */
+@media (max-width: 480px){
+
+  .logo{
+    font-size: 16px;
+  }
+
+  .btn-talk{
+    padding: 6px 14px;
+    font-size: 13px;
+  }
+
+  section{
+    padding: 40px 14px;
+  }
+}
+
+/* ===============================
+   MEDIA SAFETY (ALL DEVICES)
+================================ */
+img, video, iframe{
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===============================
+   FIXED HEADER
+================================ */
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  margin: 0;
+  padding: 0;
+  z-index: 9999;
+  background: rgba(0,0,0,0.75);
+  backdrop-filter: blur(10px);
+}
+
+.navbar{
+  height: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

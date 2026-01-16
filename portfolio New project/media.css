@@ -1,0 +1,114 @@
+/* ================= RESPONSIVE MEDIA QUERIES ================= */
+
+/* ===== XS : Mobile (Below 576px) ===== */
+@media (max-width:575px){
+
+  .container{
+    max-width:100%;
+  }
+
+  .profile-card{
+    width:100%;
+    padding:15px;
+  }
+
+  .profile-card img{
+    width:100%;
+    height:auto;
+  }
+
+  h1, h2{
+    font-size:26px;
+    text-align:center;
+  }
+}
+
+
+/* ===== SM : Mobile (576px – 767px) ===== */
+@media (min-width:576px) and (max-width:767px){
+
+  .container{
+    max-width:540px;
+  }
+
+  .profile-card{
+    width:100%;
+  }
+
+  .profile-card img{
+    width:220px;
+    height:380px;
+  }
+}
+
+
+/* ===== MD : Tablet / Mobile Horizontal (768px – 991px) ===== */
+@media (min-width:768px) and (max-width:991px){
+
+  .container{
+    max-width:720px;
+  }
+
+  .profile-card{
+    width:90%;
+  }
+
+  .profile-card img{
+    width:250px;
+    height:420px;
+  }
+}
+
+
+/* ===== LG : iPad / Mini Laptop (992px – 1199px) ===== */
+@media (min-width:992px) and (max-width:1199px){
+
+  .container{
+    max-width:960px;
+  }
+
+  .profile-card{
+    width:700px;
+  }
+
+  .profile-card img{
+    width:280px;
+    height:480px;
+  }
+}
+
+
+/* ===== XL : Laptop / Mini Desktop (1200px – 1399px) ===== */
+@media (min-width:1200px) and (max-width:1399px){
+
+  .container{
+    max-width:1140px;
+  }
+
+  .profile-card{
+    width:760px;
+  }
+
+  .profile-card img{
+    width:290px;
+    height:500px;
+  }
+}
+
+
+/* ===== XXL : Desktop / TV (1400px Above) ===== */
+@media (min-width:1400px){
+
+  .container{
+    max-width:1320px;
+  }
+
+  .profile-card{
+    width:800px;
+  }
+
+  .profile-card img{
+    width:300px;
+    height:522px;
+  }
+}
