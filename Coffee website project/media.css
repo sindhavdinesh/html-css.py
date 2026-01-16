@@ -1,0 +1,103 @@
+/* ================================= */
+/*        MIN WIDTH RESPONSIVE        */
+/* ================================= */
+
+/* SM ≥ 576px (Mobile Large) */
+@media (min-width: 576px) {
+
+    .cards,
+    .products,
+    .blogs {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card,
+    .item,
+    .b-card {
+        width: 45%;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .text h1 {
+        font-size: 34px;
+    }
+}
+
+/* MD ≥ 768px (Tablet) */
+@media (min-width: 768px) {
+
+    header {
+        flex-direction: row;
+        padding: 18px 30px;
+    }
+
+    .nav {
+        gap: 22px;
+    }
+
+    .cards,
+    .products,
+    .blogs {
+        flex-wrap: wrap;
+    }
+
+    .card,
+    .item,
+    .b-card {
+        width: 30%;
+    }
+
+    .hero {
+        height: 350px;
+    }
+
+    .text h1 {
+        font-size: 42px;
+    }
+
+    .f-main {
+        flex-direction: row;
+        text-align: left;
+    }
+}
+
+/* LG ≥ 992px (Laptop) */
+@media (min-width: 992px) {
+
+    .cards,
+    .products,
+    .blogs {
+        flex-wrap: nowrap;
+    }
+
+    .card,
+    .item,
+    .b-card {
+        width: 250px;
+    }
+
+    .hero {
+        height: 380px;
+    }
+
+    .text h1 {
+        font-size: 50px;
+    }
+}
+
+/* XL ≥ 1200px (Large Laptop / Desktop) */
+@media (min-width: 1200px) {
+
+    .hero {
+        height: 420px;
+    }
+
+    .container {
+        max-width: 1140px;
+        margin: auto;
+    }
+}

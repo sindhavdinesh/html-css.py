@@ -1,0 +1,780 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    background-color: #eac8b8;
+}
+
+
+header {
+    background: #4b3a37;
+    padding: 18px 30px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    gap: 25px;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 3px;
+    transition: 0.3s;
+}
+
+.nav li a:hover {
+    border-bottom: 2px solid white;
+}
+
+.search {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/* Hero */
+.hero {
+    background: url(https://t4.ftcdn.net/jpg/03/26/12/23/360_F_326122335_RKvTXMb4RYkIzk94ZoPjkZQe2CUOVnen.jpg) no-repeat center/cover;
+    height: 350px;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    margin-left: 40px;
+}
+
+.text h1 {
+    font-size: 50px;
+}
+
+.text button {
+    padding: 10px 20px;
+    background: white;
+    border: 0;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+
+/* Section Heading */
+.section-heading {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.section-heading h2 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.section-heading p {
+    font-size: 14px;
+}
+
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
+}
+
+.card {
+    width: 250px;
+    background: white;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;        /* FIX HEIGHT */
+    object-fit: cover;    /* IMAGE PROPER CROP */
+    border-radius: 10px;
+}
+
+.card button {
+    padding: 8px 16px;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+
+
+/* Products */
+.products {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 30px;
+}
+
+.item {
+    width: 250px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.tag {
+    background: #eee;
+    padding: 5px 10px;
+    border-radius: 30px;
+    font-size: 12px;
+    float: left;
+}
+
+.item img {
+    width: 100%;
+    height: 300px;         /* FIX HEIGHT */
+    object-fit: cover;     /* SAME CROP SIZE */
+    border-radius: 10px;   /* ROUND EDGE SAME */
+}
+
+/* Blog Section */
+.blogs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.b-card {
+    width: 250px;
+    background: white;
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.1);
+}
+
+.b-card img {
+    width: 100%;
+    height: 300px;      /* Images always same size */
+    object-fit: cover;  /* Crop perfectly */
+    border-radius: 10px;
+}
+
+.b-card h3 {
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.b-card p {
+    font-size: 13px;
+    margin: 8px 0;
+    color: #444;
+}
+
+.b-card button {
+    padding: 8px 18px;
+    background: #4b3a37;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.b-card button:hover {
+    background: #2d2220;
+}
+
+/* Footer */
+/* FOOTER SOCIAL ICONS */
+footer i.fa-brands {
+    font-size: 22px;
+    margin-right: 12px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    background: #3a2f2f;
+    color: white;
+    cursor: pointer;
+}
+
+footer i.fa-brands:hover {
+    transform: translateY(-5px) scale(1.1);
+    background: #ffffff;
+    color: #3a2f2f;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+footer {
+    margin-top: 40px;
+}
+
+.f-main {
+    display: flex;
+    justify-content: space-around;
+    background: #1b1817;
+    color: white;
+    padding: 30px;
+}
+
+.f-main h4 {
+    margin-bottom: 10px;
+}
+
+.f-main i {
+    margin-right: 10px;
+}
+
+
+.f-bottom {
+    background: #64514c;
+    padding: 12px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+/* Scrollable Milk Shakes */
+.shake-scroll {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 20px;
+}
+
+.shake-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+.shake-scroll::-webkit-scrollbar-thumb {
+    background: #b88676;
+    border-radius: 10px;
+}
+
+.shake-scroll .item {
+    flex: 0 0 240px;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+    scroll-snap-align: center;
+    border: 1px solid #ddd;
+}
+
+.shake-scroll img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.shake-scroll .item button {
+    margin-top: 10px;
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+
+/* VIEW MORE BUTTON SMOOTH CLICK EFFECT */
+.view-btn {
+    padding: 10px 25px;
+    border: 1px solid #333;
+    background: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.25s ease;  /* smooth animation */
+    border-radius: 5px;
+}
+
+/* Hover effect */
+.view-btn:hover {
+    background: #333;
+    color: #fff;
+    transform: translateY(-2px);   /* halka lift */
+}
+
+/* Click (active) effect */
+.view-btn:active {
+    transform: scale(0.95);        /* smooth press */
+    background: #222;
+    color: #fff;
+}
+
+/* SHOP NOW BUTTON SMOOTH UI */
+.shop-btn {
+    padding: 12px 30px;
+    background: #fff;
+    border: 1px solid #000;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.25s ease; /* smooth animation */
+}
+
+/* Hover Effect */
+.shop-btn:hover {
+    background: #000;
+    color: #fff;
+    transform: translateY(-3px); /* halka lift */
+}
+
+/* Click / Active effect */
+.shop-btn:active {
+    transform: scale(0.92); /* smooth press */
+    background: #222;
+    color: #fff;
+}
+
+/* --- Your normal CSS (cards, navbar, etc...) --- */
+
+
+/* --- BUY NOW BUTTON UI (PASTE HERE) --- */
+.buy-now-btn {
+    padding: 10px 22px;
+    border-radius: 30px;
+    border: 2px solid #000;
+    background: #fff;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: 
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.2s ease,
+        box-shadow 0.3s ease;
+}
+
+.buy-now-btn:hover {
+    background: #000;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.buy-now-btn:active {
+    transform: scale(0.93);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+
+/* --- MEDIA QUERY START --- */
+@media (max-width: 768px) {
+    /* responsive stuff */
+}
+
+/* NAVBAR LINK DEFAULT STYLE */
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* HOVER EFFECT – Smooth underline */
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    transition: width 0.3s ease;
+    border-radius: 2px;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+/* CLICK ACTIVE EFFECT */
+.navbar a:active {
+    transform: scale(0.92);
+    opacity: 0.6;
+}
+
+/* CURRENT PAGE ACTIVE LINK (optional) */
+.navbar a.active {
+    color: #ffe0b3;
+}
+
+.navbar a.active::after {
+    width: 100%;
+    background: #ffe0b3;
+}
+
+/* READ NOW BUTTON */
+.read-btn {
+    background: #3b2a26; /* Coffee brown */
+    color: #fff;
+    padding: 10px 28px;
+    border-radius: 25px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Hover Effect (soft glow + smooth lift) */
+.read-btn:hover {
+    background: #5a4039;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+
+/* Click Effect */
+.read-btn:active {
+    transform: scale(0.92);
+    opacity: 0.8;
+}
+
+
+/* ================================= */
+/*        MIN WIDTH RESPONSIVE        */
+/* ================================= */
+
+/* SM ≥ 576px (Mobile Large) */
+@media (min-width: 576px) {
+
+    .cards,
+    .products,
+    .blogs {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card,
+    .item,
+    .b-card {
+        width: 45%;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .text h1 {
+        font-size: 34px;
+    }
+}
+
+/* MD ≥ 768px (Tablet) */
+@media (min-width: 768px) {
+
+    header {
+        flex-direction: row;
+        padding: 18px 30px;
+    }
+
+    .nav {
+        gap: 22px;
+    }
+
+    .cards,
+    .products,
+    .blogs {
+        flex-wrap: wrap;
+    }
+
+    .card,
+    .item,
+    .b-card {
+        width: 30%;
+    }
+
+    .hero {
+        height: 350px;
+    }
+
+    .text h1 {
+        font-size: 42px;
+    }
+
+    .f-main {
+        flex-direction: row;
+        text-align: left;
+    }
+}
+
+/* LG ≥ 992px (Laptop) */
+@media (min-width: 992px) {
+
+    .cards,
+    .products,
+    .blogs {
+        flex-wrap: nowrap;
+    }
+
+    .card,
+    .item,
+    .b-card {
+        width: 250px;
+    }
+
+    .hero {
+        height: 380px;
+    }
+
+    .text h1 {
+        font-size: 50px;
+    }
+}
+
+/* XL ≥ 1200px (Large Laptop / Desktop) */
+@media (min-width: 1200px) {
+
+    .hero {
+        height: 420px;
+    }
+
+    .container {
+        max-width: 1140px;
+        margin: auto;
+    }
+}
+
+/* ========================= */
+/* MOBILE NAVBAR FIX ONLY   */
+/* ========================= */
+@media (max-width:768px){
+
+  /* navbar wrap allow */
+  .navbar{
+    flex-wrap: wrap;
+  }
+
+  /* logo + icon same row */
+  .logo{
+    font-size:18px;
+    white-space: nowrap;
+  }
+
+  .nav-icon{
+    margin-left: auto;
+    white-space: nowrap;
+  }
+
+  /* menu neeche full width me */
+  .nav-links{
+    width:100%;
+    margin-top:10px;
+
+    display:flex;
+    justify-content: space-between;
+    gap:10px;
+  }
+
+  .nav-links a{
+    font-size:14px;
+    white-space: nowrap;
+  }
+}
+
+/* ========================= */
+/* REAL MOBILE NAVBAR FIX   */
+/* ========================= */
+@media (max-width:768px){
+
+  /* navbar base */
+  .navbar{
+    flex-wrap: wrap;
+    row-gap: 8px;
+  }
+
+  /* logo */
+  .logo{
+    font-size:18px;
+    white-space: nowrap;
+  }
+
+  /* search icon right */
+  .nav-icon{
+    margin-left:auto;
+    font-size:18px;
+    white-space: nowrap;
+  }
+
+  /* menu container */
+  .nav-links{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;          /* 🔥 KEY FIX */
+    justify-content:center;   /* center align */
+    gap:12px;
+    margin-top:6px;
+  }
+
+  .nav-links li{
+    flex: 0 0 auto;
+  }
+
+  .nav-links a{
+    font-size:14px;
+    white-space: nowrap;
+  }
+}
+
+/* ========================= */
+/* HARD MOBILE FIX (ONLY WAY)
+/* ========================= */
+@media (max-width:768px){
+
+  /* navbar same */
+  .navbar{
+    display:flex;
+    align-items:center;
+  }
+
+  /* LOGO LEFT */
+  .logo{
+    font-size:18px;
+    white-space:nowrap;
+  }
+
+  /* SEARCH ICON RIGHT */
+  .nav-icon{
+    margin-left:auto;
+    font-size:18px;
+  }
+
+  /* 🚨 MENU COMPLETELY HIDE ON MOBILE */
+  .nav-links{
+    display:none !important;
+  }
+}
+
+@media (max-width: 575px){
+  nav, .navbar{
+    background: blue !important;
+  }
+}
+
+/* =============================== */
+/* FORCE FIX FOR <=575px (XS)     */
+/* =============================== */
+@media (max-width: 575px){
+
+  header .navbar{
+    display:flex !important;
+    flex-wrap:wrap !important;
+    padding:12px 14px !important;
+  }
+
+  header .logo{
+    font-size:18px !important;
+    white-space:nowrap;
+  }
+
+  header .nav-icon{
+    margin-left:auto !important;
+    font-size:18px;
+  }
+
+  header .nav-links{
+    width:100% !important;
+    display:flex !important;
+    flex-wrap:wrap !important;
+    justify-content:center !important;
+    gap:10px !important;
+    margin-top:8px !important;
+  }
+
+  header .nav-links a{
+    font-size:14px !important;
+    white-space:nowrap;
+  }
+}
+
+@media (max-width:575px){
+
+  nav{
+    display:flex !important;
+    flex-wrap:wrap !important;
+  }
+
+  nav ul{
+    width:100% !important;
+    display:flex !important;
+    flex-wrap:wrap !important;
+    justify-content:center !important;
+    gap:10px !important;
+  }
+}
+
+/* ============================= */
+/* PAGE HILNA / BOUNCE FIX      */
+/* ============================= */
+
+/* html & body fix */
+html, body{
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0;
+  overflow-x:hidden;   /* left-right hilna band */
+  overscroll-behavior: none; /* mobile bounce band */
+}
+
+/* main wrapper agar hai */
+body{
+  position:relative;
+}
+
+/* sab sections ke liye safety */
+section{
+  width:100%;
+  max-width:100%;
+  overflow:hidden;
+}
+
+/* images overflow fix */
+img{
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+
+/* background image wale sections ke liye */
+.hero,
+.header,
+.footer{
+  background-attachment: scroll; /* fixed use mat kar */
+}
+
+/* extra margin/padding remove */
+*{
+  box-sizing:border-box;
+}
+
