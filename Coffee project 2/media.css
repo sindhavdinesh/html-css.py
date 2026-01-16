@@ -1,0 +1,41 @@
+/* XS — Extra Small (575px Below) */
+@media (max-width: 575px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+/* SM — Small (767px Below) */
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+/* MD — Medium (991px Below) */
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+/* LG — Large (1199px Below) */
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* XL — Extra Large (1399px Below) */
+@media (max-width: 1399px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* XXL — 1400px Above (no max width, but container size fixed) */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
