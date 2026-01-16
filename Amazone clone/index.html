@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prime-like Movie Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="left">
+        <div class="brand">
+          <div class="logo"><span class="mark">prime</span> video</div>
+          <div class="dot"></div>
+        </div>
+
+        <nav class="main-nav" aria-label="main navigation">
+          <a href="#" class="active">Home</a>
+          <a href="#">Movies</a>
+          <a href="#">TV shows</a>
+          <a href="#">Live TV</a>
+          <a href="#">Kids</a>
+        </nav>
+      </div>
+
+      <div class="lang-box">
+            <button class="lang-btn">EN ⌄</button>
+            <div class="dropdown">
+                <div class="grid">
+                    <span>Bahasa Indonesia</span>
+                    <span>Italiano</span>
+                    <span>Suomi</span>
+                    <span>한국어</span>
+                    <span>Bahasa Melayu</span>
+                    <span>Magyar</span>
+                    <span>Svenska</span>
+                    <span>Türkçe</span>
+                    <span>Dansk</span>
+                    <span>Norsk</span>
+                    <span>Wikang Filipino</span>
+                    <span>Čeština</span>
+                    <span>Deutsch</span>
+                    <span>Polski</span>
+                    <span>Ελληνικά</span>
+                    <span>ไทย</span>
+                    <span>English</span>
+                    <span>Português (Brasil)</span>
+                    <span>Português (Portugal)</span>
+                    <span>日本語</span>
+                    <span>Español</span>
+                    <span>Español Latinoamérica</span>
+                    <span>Français</span>
+                    <span>Română</span>
+                </div>
+            </div>
+        </div>
+
+    <div class="search-wrapper">
+    <input type="text" class="search-input" placeholder="Search">
+    <span class="search-icon">🔍</span>
+</div>
+        <button class="icon" title="notifications">🔔</button>
+        <button class="join">Join Prime</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img class="hero-bg" src="https://images.ifun.de/wp-content/uploads/2023/09/prime-video-feature.jpg" alt="hero banner">
+    <div class="hero-overlay">
+      <div class="hero-left">
+        <span class="kicker">prime</span>
+        <h1 class="hero-title">CRAZY X</h1>
+        <p class="hero-desc">All good movies horror and drama. Good surgeon. Bad father. Questionable human being. Watch the latest recommended movie.</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="#">Join Prime</a>
+          <button class="btn circle">＋</button>
+          <div class="dots" aria-hidden="true">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="content">
+    <div class="container">
+      <!-- Row 1 -->
+      <section class="section">
+        <div class="row-head">
+          <div>
+            <h2>Movies</h2>
+            <p class="section-sub">Top movies</p>
+          </div>
+          <div style="display:flex;gap:14px;align-items:center">
+            <a class="see-more" href="#">See more ›</a>
+            <div class="carousel-controls">
+              <button class="arrow" data-target="top-movies" data-dir="-1">◀</button>
+              <button class="arrow" data-target="top-movies" data-dir="1">▶</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="top-movies" class="carousel">
+          <!-- Replace these src with your thumbs (thumb1.jpg etc) -->
+          <div class="card"><img src="https://avatars.mds.yandex.net/i?id=2cedbb401cb7fbb8c2f74de5613773fb338ae21d-12473751-images-thumbs&n=13" alt=""><div class="badge">prime</div></div>
+          <div class="card"><img src="https://avatars.mds.yandex.net/i?id=f66cdcd2708dcee6f2e8c95138b30075184ef564-12447078-images-thumbs&n=13" alt=""><div class="badge">prime</div></div>
+          <div class="card"><img src="https://avatars.mds.yandex.net/i?id=a9056daa7ebd9f1066dde8ef7040a5bcc38122d8-8172987-images-thumbs&n=13" alt=""><div class="badge">prime</div></div>
+          <div class="card"><img src="https://avatars.mds.yandex.net/i?id=88dbf1c06ac17ab2a48b8e9737ce7e643e0852b5-10814742-images-thumbs&n=13" alt=""><div class="badge">prime</div></div>
+          <div class="card"><img src="https://avatars.mds.yandex.net/i?id=0fff547fa13c518ce8c5560b92f023ccecbe621a-3493287-images-thumbs&n=13" alt=""><div class="badge">prime</div></div>
+          <div class="card"><img src="https://i.ytimg.com/vi/Z62_w7wrLFc/maxresdefault.jpg" alt=""><div class="badge">prime</div></div>
+        </div>
+      </section>
+
+      <!-- Row 2 -->
+      <section class="section">
+        <div class="row-head">
+          <h3>Latest movies</h3>
+          <a class="see-more" href="#">See more ›</a>
+        </div>
+        <div class="carousel">
+          <div class="card"><img src="https://i.ytimg.com/vi/7k2YTg9BevY/maxresdefault.jpg" alt=""><div class="badge">prime</div></div>
+          <div class="card"><img src="https://pbs.twimg.com/media/EyIpNXCWEAA_NQg.jpg" alt=""><div class="badge">prime</div></div>
+          <div class="card"><img src="https://avatars.mds.yandex.net/i?id=7f47c546f7a4582622c87c7fd01ec1139417fa70-12935586-images-thumbs&n=13" alt=""><div class="badge">prime</div></div>
+          <div class="card"><img src="https://i.ytimg.com/vi/CGwWs4MQAj0/maxresdefault.jpg" alt=""><div class="badge">prime</div></div>
+        </div>
+      </section>
+
+      <!-- Row 3 -->
+      <section class="section">
+        <div class="row-head">
+          <h3>Horror movies</h3>
+          <a class="see-more" href="#">See more ›</a>
+        </div>
+        <div class="carousel">
+          <div class="card"><img src="https://avatars.mds.yandex.net/i?id=a3ae629700ec39be439674c8199d35b9ff2db361-5439913-images-thumbs&n=13" alt=""><div class="badge">prime</div></div>
+          <div class="card"><img src="https://i.ytimg.com/vi/E_oRSyjtamw/maxresdefault.jpg" alt=""><div class="badge">prime</div></div>
+          <div class="card"><img src="https://i.ytimg.com/vi/aIvA3PwwvN0/maxresdefault.jpg" alt=""><div class="badge">prime</div></div>
+		  <div class="card"><img src="https://i.ytimg.com/vi/OW_uKn-Zp6w/hq720.jpg" alt=""><div class="badge">prime</div></div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© Prime video</div>
+  </footer>
+
+<script>
+  document.querySelectorAll('.arrow').forEach(btn=>{
+    btn.addEventListener('click', ()=> {
+      const id = btn.dataset.target;
+      const dir = parseInt(btn.dataset.dir,10);
+      const el = document.getElementById(id);
+      const scrollAmount = el.clientWidth * 0.6;
+      el.scrollBy({left: scrollAmount * dir, behavior:'smooth'});
+    });
+  });
+</script>
+
+</body>
+</html>
