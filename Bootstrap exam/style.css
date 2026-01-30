@@ -1,0 +1,101 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fffaf3;
+}
+
+.vadapau {
+    font-size: 30px;
+}
+
+
+#navMenu ul a {
+    transition: all 0.4s ease-in-out;
+}
+
+#navMenu ul a:hover {
+    border-radius: 20%;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+
+
+/*  */
+
+
+.menu-card {
+    transition: all 0.4s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.menu-card img {
+    transition: transform 0.4s ease;
+}
+
+.menu-card:hover img {
+    transform: scale(1.08);
+}
+
+.btn-cart {
+    transition: all 0.3s ease;
+}
+
+.btn-cart:hover {
+    background: #ffc107;
+    color: #000;
+}
+
+.category-btn {
+    transition: all 0.3s ease;
+}
+
+.category-btn:hover,
+.category-btn.active {
+    background: #ffc107;
+    color: #000;
+}
+
+
+/*  */
+
+
+.footer-links a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+
+.footer-links a:hover {
+    color: #00c47a;
+    transform: translateX(6px);
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+}
+
+.menu-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.4);
+}
